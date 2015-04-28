@@ -8,6 +8,8 @@
 	Use the staging area for staging files that are inter-related with respect to the single feature that has been added or single bug that has been fixed.
 
 **** What are some situations when branches would be helpful in keeping your history organized? How would branches help?
-	Branches based on the master branch would be helpful when making experimental changes or when exploring solutions without touching any of the content of the actual master branch.
+	Branches based on the master branch (production quality, always works, never breaks) would be helpful when making experimental changes or when exploring solutions without touching any of the content of the actual master branch.
+
+	Branching may be seen as a sort of a path for "context-switching" on the project.
 
 **** 
