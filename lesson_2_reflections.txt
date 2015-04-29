@@ -17,5 +17,53 @@
 
 	The graphical representation also helps in identifying the relationships of the different branches with respect to the master (or production) branch.
 
-****
+**** What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	Merging two branches together results in the combining of all the appropriate changes into one single master branch node.  
 
+	The combined branches result in the combining of commit histories of the two branches.  When displayed using "git log", the commit history are displayed in proper time sequence.
+
+	>>>Sample Display<<< 
+	towers1209 (master) asteroids $ git log --oneline
+	ddeea36 Make the coin solid and yellow.
+	f154bc3 Merge 'coins' into 'master'
+	37b34e4 Add missing line: this.delayBeforeBullet = 10; on line 424
+	3884eab Add color
+	3e42136 now using requestAnimationFrame
+	4035769 frame interval was set wrong after game was paused
+	354dfdd Make ships able to spawn on coins
+	0c6daf1 Make it possible to collect coins
+	a3c0ae4 Create helper functions
+	25ede83 a couple missing ends with the ipad version
+	df03538 I can't spell 'screen' apparently :)
+	656b02e First pass at adding coins
+	b0678b1 Revert controls
+	f19cb1b Fix typo in space
+	75928a9 Use space for movement and enter for shooting
+	:
+	:
+
+	To display the commit history showing the proer sequence of commits use "git log --graph --oneline"
+
+	>>>Sample Display<<< 
+	towers1209 (master) asteroids $ git log --graph --oneline
+	* ddeea36 Make the coin solid and yellow.
+	*   f154bc3 Merge 'coins' into 'master'
+	|\  
+	| * 354dfdd Make ships able to spawn on coins
+	| * 0c6daf1 Make it possible to collect coins
+	| * a3c0ae4 Create helper functions
+	| * 656b02e First pass at adding coins
+	* | 37b34e4 Add missing line: this.delayBeforeBullet = 10; on line 424
+	* | 3884eab Add color
+	* | 3e42136 now using requestAnimationFrame
+	* | 4035769 frame interval was set wrong after game was paused
+	* | 25ede83 a couple missing ends with the ipad version
+	* | df03538 I can't spell 'screen' apparently :)
+	|/  
+	* b0678b1 Revert controls
+	* f19cb1b Fix typo in space
+	* 75928a9 Use space for movement and enter for shooting
+	:
+	:
+
+**** 
