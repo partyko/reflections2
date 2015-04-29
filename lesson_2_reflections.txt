@@ -12,4 +12,10 @@
 
 	Branching may be seen as a sort of a path for "context-switching" on the project.
 
-**** 
+**** How do the diagrams help you visualize the branch structure?
+	Graphically representing the branch structure of a repository helps on identifying commits that are reachable and which are unreachable.
+
+	The graphical representation also helps in identifying the relationships of the different branches with respect to the master (or production) branch.
+
+****
+
