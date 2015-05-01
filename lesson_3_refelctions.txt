@@ -20,7 +20,7 @@ use one instead of another?
 **** What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    Having a copy of the last known state of the remote repository helps on making sure that a proper (or as clean as possible) merging of the local and the remote repositories is possible in situations when the remote commits and local commits cause a divergence from the master branch.  Having the last know state of the remote repository on the lcoal machine allows for a common reference for determining any possible conflicts.
 
 **** How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
